@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connection Links</title>
+    <style>
+        /* layout and background */
+        body {
+            font-family: Arial, sans-serif;
+            background: #2f3136;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* main embed card */
+        .profile-card {
+            background: #202225;
+            border-left: 5px solid #7289da;
+            border-radius: 16px;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+            width: 360px;
+            padding: 24px;
+            text-align: left;
+        }
+
+        /* profile avatar styling */
+        .profile-card img.avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: left;
+            margin-right: 16px;
+            border: 2px solid rgba(255,255,255,0.08);
+        }
+
+        /* username and description text */
+        .profile-card h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .profile-card h3 {
+            margin: 8px 0 0;
+            color: #b9bbbe;
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        /* embed footer text */
+        .embed-footer {
+            clear: both;
+            margin-top: 24px;
+            color: #8e9297;
+            font-size: 13px;
+        }
+
+        /* link grid size */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        /* each icon tile */
+        .link-grid a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px;
+            border-radius: 14px;
+            background: #2f3136;
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+            text-decoration: none;
+        }
+        .link-grid a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 18px rgba(0,0,0,0.25);
+        }
+
+        /* link icon size */
+        .link-grid img {
+            width: 36px;
+            height: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <!-- profile avatar -->
+        <img class="avatar" src="https://via.placeholder.com/80" alt="Profile image" />
+
+        <!-- username and description -->
+        <h1>Your Name</h1>
+        <h3>Connect with me across my accounts.</h3>
+
+        <!-- link grid -->
+        <div class="link-grid">
+            <a href="https://example.com/discord" target="_blank" rel="noopener">
+                <img src="https://img.icons8.com/fluency/48/ffffff/discord-logo.png" alt="Discord" />
+            </a>
+            <a href="https://example.com/github" target="_blank" rel="noopener">
+                <img src="https://img.icons8.com/fluency/48/ffffff/github.png" alt="GitHub" />
+            </a>
+            <a href="https://example.com/twitch" target="_blank" rel="noopener">
+                <img src="https://img.icons8.com/fluency/48/ffffff/twitch.png" alt="Twitch" />
+            </a>
+        </div>
+
+        <!-- embed footer -->
+        <div class="embed-footer">Connection links embed</div>
+    </div>
+</body>
+</html>
